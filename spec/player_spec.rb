@@ -1,3 +1,5 @@
+require 'player'
+
 describe Player do
   describe '#name' do
     it 'returns the player name'do
