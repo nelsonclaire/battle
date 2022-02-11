@@ -1,8 +1,12 @@
 
+<h2><%= @game.player1.name %> Vs <%= @game.player2.name %></h2>
+<h2><%= @game.player1.name %> hitpoints <%= @game.player1.hitpoints %>/<%= Player::HITPOINTS_DEFAULT %></h2>
+<h2><%= @game.player2.name %> hitpoints <%= @game.player2.hitpoints %>/<%= Player::HITPOINTS_DEFAULT %></h2>
 
-<h1><%= @game.player1.name %> Vs <%= @game.player2.name %></h1>
-<h1><%= @game.player2.name %> hitpoints <%= @game.player2.hitpoints %>/<%= Player::HITPOINTS_DEFAULT %></h1>
+<h2><%= @game.current_turn.name %>'s turn</h2>
 
 <form action="/attack" method="post">
   <input type="submit" value="Attack">
 </form>
+
+
