@@ -3,6 +3,6 @@ require 'capybara/rspec'
 feature 'Hit Points' do 
     scenario 'we see players hit points information' do
         sign_in_and_play
-        expect(page).to have_content 'Chris Hitpoints 50/50'
+        expect(page).to have_content 'Chris hitpoints 50/50'
     end
 end

@@ -1,2 +1,2 @@
-<h1><%= @player1 %> has attacked <%= @player2 %></h1>
-<h1><%= @player2 %> Hitpoints <%= $Player2.hitpoints %>/<%= Player::HITPOINTS_DEFAULT %></h1>
+<h1><%= @game.player1.name %> attacked <%= @game.player2.name %></h1>
+<h1><%= @game.player2.name %> hitpoints <%= @game.player2.hitpoints %>/<%= Player::HITPOINTS_DEFAULT %></h1>
